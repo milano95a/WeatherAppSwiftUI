@@ -13,6 +13,8 @@ struct WeatherAppSwiftUIApp: App {
         WindowGroup {
             WeatherView()
                 .environmentObject(WeatherViewModel())
+                .environmentObject(ConfigurationViewModel())
+                .environment(\.colorScheme, .dark)
         }
     }
 }
