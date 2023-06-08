@@ -1,4 +1,4 @@
-# Simple but Awesome Weather App 
+# Awesome Weather App 
 
 Step 1: Add your [Open Weather Maps API Key](https://pages.github.com/) to APIManager.swift
 
@@ -10,7 +10,7 @@ Step 2: Configure weather temperatures and messages
 
 ![Scalding Logo](https://github.com/milano95a/WeatherAppSwiftUI/blob/master/WeatherAppSwiftUI/Screenshots/configuration.PNG) 
 
-Step 3: Get simple weather updates 
+Step 3: Get awesome weather updates 
 
 ![Scalding Logo](https://github.com/milano95a/WeatherAppSwiftUI/blob/master/WeatherAppSwiftUI/Screenshots/extreme%20hot.PNG)
 ![Scalding Logo](https://github.com/milano95a/WeatherAppSwiftUI/blob/master/WeatherAppSwiftUI/Screenshots/too%20hot.PNG)
