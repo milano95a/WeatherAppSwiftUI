@@ -14,8 +14,12 @@ struct WeatherView: View {
         NavigationStack {
             GeometryReader { geometry in
                 VStack(spacing: 0) {
-                    configButton(geometry)
-                    weatherContent(geometry)
+                    if Reachability.isConnectedToNetwork() {
+                        configButton(geometry)
+                        weatherContent(geometry)
+                    } else {
+                        noInternet(geometry)
+                    }
                 }
                 .background(vm.weatherColor ?? .green1)
                 .onAppear {
@@ -59,6 +63,15 @@ struct WeatherView: View {
         }
         .frame(width: geometry.size.width, height: geometry.size.height * 0.9)
         .foregroundColor(.white)
+    }
+    
+    func noInternet(_ geometry: GeometryProxy) -> some View {
+        VStack {
+            Image(systemName: "wifi.slash")
+                .foregroundColor(.white)
+                .font(.system(size: 100))
+        }
+        .frame(width: geometry.size.width, height: geometry.size.height)
     }
 }
 

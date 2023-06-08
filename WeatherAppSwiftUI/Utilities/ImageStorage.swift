@@ -13,9 +13,9 @@ struct ImageStorage {
         .tooHot: "t-shirt",
         .hot: "t-shirt",
         .warm: "t-shirt",
-        .cool: "shirt",
-        .cold: "long sleeve",
-        .freezing: "hoodie",
-        .extremeCold: "coat",
+        .cool: "long sleeve",
+        .cold: "hoodie",
+        .freezing: "coat",
+        .extremeCold: "house",
     ]
 }

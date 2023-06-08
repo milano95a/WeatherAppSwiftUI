@@ -23,7 +23,8 @@ class APIManager {
         }
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
-            let weatherResponse = try JSONDecoder().decode(WeatherResponse.self, from: data)
+            var weatherResponse = try JSONDecoder().decode(WeatherResponse.self, from: data)
+            weatherResponse.main.temp = 50
             return weatherResponse
         } catch let error {
             print(error)

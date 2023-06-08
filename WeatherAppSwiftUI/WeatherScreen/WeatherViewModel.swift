@@ -82,7 +82,7 @@ class WeatherViewModel: ObservableObject {
             
             description = descriptions[weatherType]
             message = messages[weatherType]
-            temperature = "\(weather.temp)"
+            temperature = "\(weather.temp)°"
             weatherClothing = ImageStorage.images[weatherType]
             weatherColor = ColorStorage.colors[weatherType]
         }
