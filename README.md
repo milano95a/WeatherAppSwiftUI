@@ -1,6 +1,10 @@
 # Simple but Awesome Weather App 
 
-Step 1: Add your [Open Weather Maps API Key](https://pages.github.com/)
+Step 1: Add your [Open Weather Maps API Key](https://pages.github.com/) to APIManager.swift
+
+```swift
+static let apiKey = ""
+```
 
 Step 2: Configure weather temperatures and messages 
 
