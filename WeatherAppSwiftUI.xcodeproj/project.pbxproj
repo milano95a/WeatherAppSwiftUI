@@ -24,6 +24,7 @@
 		BDAA770B2A32047A00E43B08 /* freezing.PNG in Resources */ = {isa = PBXBuildFile; fileRef = BDAA77002A32047A00E43B08 /* freezing.PNG */; };
 		BDAA770C2A32047A00E43B08 /* too hot.PNG in Resources */ = {isa = PBXBuildFile; fileRef = BDAA77012A32047A00E43B08 /* too hot.PNG */; };
 		BDAA770D2A32047A00E43B08 /* warm.PNG in Resources */ = {isa = PBXBuildFile; fileRef = BDAA77022A32047A00E43B08 /* warm.PNG */; };
+		BDAA770F2A3210EE00E43B08 /* ContainerWithProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA770E2A3210EE00E43B08 /* ContainerWithProgressView.swift */; };
 		BDB61B4A2A2B2FC50028C0F2 /* WeatherAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB61B492A2B2FC50028C0F2 /* WeatherAppSwiftUIApp.swift */; };
 		BDB61B4C2A2B2FC50028C0F2 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB61B4B2A2B2FC50028C0F2 /* WeatherView.swift */; };
 		BDB61B4E2A2B2FC70028C0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB61B4D2A2B2FC70028C0F2 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		BDAA77002A32047A00E43B08 /* freezing.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freezing.PNG; sourceTree = "<group>"; };
 		BDAA77012A32047A00E43B08 /* too hot.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "too hot.PNG"; sourceTree = "<group>"; };
 		BDAA77022A32047A00E43B08 /* warm.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warm.PNG; sourceTree = "<group>"; };
+		BDAA770E2A3210EE00E43B08 /* ContainerWithProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithProgressView.swift; sourceTree = "<group>"; };
 		BDB61B462A2B2FC50028C0F2 /* WeatherAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB61B492A2B2FC50028C0F2 /* WeatherAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		BDB61B4B2A2B2FC50028C0F2 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -95,7 +97,6 @@
 			children = (
 				BDB61B5C2A2C81B80028C0F2 /* ConfigurationView.swift */,
 				BDB61B5E2A2C81F00028C0F2 /* ConfigurationViewModel.swift */,
-				BDB61B622A2CE8CB0028C0F2 /* Custom Views */,
 			);
 			path = ConfigurationScreen;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 				BDAA76C72A31F1FB00E43B08 /* AboutScreen.swift */,
 				BDAA76C32A30A1BA00E43B08 /* WeatherScreen */,
 				BDAA76C42A30A1C900E43B08 /* ConfigurationScreen */,
+				BDB61B622A2CE8CB0028C0F2 /* Custom Views */,
 				BDAA76C52A30A1E700E43B08 /* Utilities */,
 				BDB61B572A2B2FE60028C0F2 /* Supporting Files */,
 				BDB61B4F2A2B2FC70028C0F2 /* Preview Content */,
@@ -185,6 +187,7 @@
 				BDAA76BD2A307DF100E43B08 /* ConfigurationItemView.swift */,
 				BDB61B602A2CE7800028C0F2 /* CustomTextField.swift */,
 				BDB61B632A2CE9160028C0F2 /* WeatherStepper.swift */,
+				BDAA770E2A3210EE00E43B08 /* ContainerWithProgressView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				BDB61B5F2A2C81F00028C0F2 /* ConfigurationViewModel.swift in Sources */,
 				BD11A1022A2F816600AC2750 /* Constants.swift in Sources */,
 				BDAA76CA2A31FC7200E43B08 /* Reachability.swift in Sources */,
+				BDAA770F2A3210EE00E43B08 /* ContainerWithProgressView.swift in Sources */,
 				BDAA76C82A31F1FB00E43B08 /* AboutScreen.swift in Sources */,
 				BDAA76C22A308FC500E43B08 /* ImageStorage.swift in Sources */,
 				BDB61B5D2A2C81B80028C0F2 /* ConfigurationView.swift in Sources */,

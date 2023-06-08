@@ -13,14 +13,17 @@ struct WeatherView: View {
     var body: some View {
         NavigationStack {
             GeometryReader { geometry in
-                VStack(spacing: 0) {
-                    if Reachability.isConnectedToNetwork() {
-                        configButton(geometry)
-                        weatherContent(geometry)
-                    } else {
-                        noInternet(geometry)
+                ContainerWithProgressView($vm.isLoading) {
+                    VStack(spacing: 0) {
+                        if Reachability.isConnectedToNetwork() {
+                            configButton(geometry)
+                            weatherContent(geometry)
+                        } else {
+                            noInternet(geometry)
+                        }
                     }
                 }
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 .background(vm.weatherColor ?? .green1)
                 .onAppear {
                     Task {

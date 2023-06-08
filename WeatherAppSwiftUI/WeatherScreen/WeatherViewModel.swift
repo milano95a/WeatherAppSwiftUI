@@ -14,6 +14,7 @@ class WeatherViewModel: ObservableObject {
     @Published private(set) var temperature: String?
     @Published private(set) var weatherClothing: String?
     @Published private(set) var weatherColor: Color?
+    @Published var isLoading: Bool = false
     
     private var configuration: WeatherConfiguration
     
@@ -53,6 +54,10 @@ class WeatherViewModel: ObservableObject {
     // MARK: Intent(s)
     
     func refresh() async {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            self.isLoading = true
+        }
         guard let weatherResponse = await APIManager.shared.fetchWeather() else { return }
         let weather = Weather(temp: weatherResponse.main.temp, description: weatherResponse.weather[0].main)
         self.weather = weather
@@ -85,6 +90,7 @@ class WeatherViewModel: ObservableObject {
             temperature = "\(weather.temp)°"
             weatherClothing = ImageStorage.images[weatherType]
             weatherColor = ColorStorage.colors[weatherType]
+            isLoading = false
         }
     }
     
